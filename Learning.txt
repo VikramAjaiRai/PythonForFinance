@@ -1,0 +1,31 @@
+1)install anaconda
+2)Go to repository where all notebooks are present. D:\Python\PythonForFinance\Python-for-Finance-Repo-master>conda env create -f environment.yml
+3)activate pyfinance
+4)type jupyter notebook and you will see below url:
+http://localhost:8888/?token=046fb7883688f899e9fb96f39c458be7d77833a60d6cbfbf
+5)Copy pasete the url and enter token. On web page you will see the notebooks.
+
+numpy - np.array,arange,zeros,ones,linspace(linearly spaced),eye,random.rand,random.randn,dtype,max
+
+np.zeros(3--rows,5--columns)
+np.linspace(start,end,evenly space number of elements)
+np.eye(4)--diagonal elements will be 1, and matrix will be 4X4
+np.random.rand(2) - there will be 2 numbers between [0,1) for which probablity will be the same to be picked
+np.random.rand(2) - standard normal distribution of element(negative numbers can occur)
+np.random.randint(start, end(exclusive), no of randome integers)
+
+population=a,b,c,d,e,f,g,h,....,Nth element
+mean - average of N entities
+variance - sigma**2 = (a-mean)+(b-mean)...+(h-mean)/N
+standard deviation=variance**0.5
+
+sample=a,b,c,d,e,f,g,h,....,Nth element
+mean - average of N entities
+variance - sigma**2 = (a-mean)+(b-mean)...+(h-mean)/(N-1)
+standard deviation=variance**0.5
+
+create an array:
+1)we can reshape it using arrayname.reshape(5,5) - it will give an array of 5X5 elements, but if we check the shape of the array it will show(25,) means it is a 1D array. so to overcome this we can use:
+arrayname.reshape(5,5).shape -- we are not using () after shape because we are using it as an attribute or a property
+
+arrayname.argmax()--returns the index of max value,max,dtype,reshape,shape
